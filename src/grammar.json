@@ -201,11 +201,11 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "attribute"
+                "name": "tt_block"
               },
               {
                 "type": "SYMBOL",
-                "name": "tt_block"
+                "name": "attribute"
               }
             ]
           }
@@ -239,11 +239,11 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "attribute"
+                "name": "tt_block"
               },
               {
                 "type": "SYMBOL",
-                "name": "tt_block"
+                "name": "attribute"
               }
             ]
           }
@@ -277,11 +277,11 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "attribute"
+                "name": "tt_block"
               },
               {
                 "type": "SYMBOL",
-                "name": "tt_block"
+                "name": "attribute"
               }
             ]
           }
@@ -315,11 +315,11 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "attribute"
+                "name": "tt_block"
               },
               {
                 "type": "SYMBOL",
-                "name": "tt_block"
+                "name": "attribute"
               }
             ]
           }
@@ -409,12 +409,19 @@
       ]
     },
     "attribute_name": {
-      "type": "PATTERN",
-      "value": "[^<>\\\"'/=\\s]+"
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": -1,
+        "content": {
+          "type": "PATTERN",
+          "value": "[^<>\"'/=\\s]+"
+        }
+      }
     },
     "attribute_value": {
       "type": "PATTERN",
-      "value": "[^<>\\\"'=\\s]+"
+      "value": "[^<>\"'=\\s]+"
     },
     "entity": {
       "type": "PATTERN",
