@@ -1,0 +1,22 @@
+{
+  "grammars": [
+    {
+      "name": "ttk",
+      "camelcase": "Ttk",
+      "scope": "source.tt2",
+      "file-types": ["tt", "tt2", "ttml"],
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Template Toolkit grammar with HTML support",
+    "authors": [
+      {
+        "name": "Jan Limpens"
+      }
+    ]
+  }
+}
